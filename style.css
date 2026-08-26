@@ -1,7 +1,7 @@
 /* =========================================================
    ELPAI NEWSLETTER
-   Final Government Editorial Style
-   Navy + Gold
+   FINAL CSS
+   ELP NAVY + GOLD
 ========================================================= */
 
 
@@ -25,6 +25,8 @@
     --bg: #f5f7f9;
 
     --white: #ffffff;
+
+    --success: #1d7950;
 
     --shadow:
         0 14px 35px rgba(12,45,74,.10);
@@ -88,8 +90,7 @@ body {
 
     background: var(--white);
 
-    border-bottom:
-        1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 
     position: sticky;
 
@@ -112,7 +113,7 @@ body {
 
 
 /* =========================================================
-   BRAND / LOGO
+   BRAND
 ========================================================= */
 
 .brand {
@@ -121,7 +122,7 @@ body {
 
     align-items: center;
 
-    gap: 14px;
+    gap: 13px;
 }
 
 
@@ -129,9 +130,7 @@ body {
 
 .brand-logo {
 
-    font-family:
-        Arial,
-        sans-serif;
+    font-family: Arial, sans-serif;
 
     font-size: 25px;
 
@@ -139,32 +138,23 @@ body {
 
     letter-spacing: -1.8px;
 
-    line-height: 1;
-
     color: var(--navy);
+
+    line-height: 1;
 
     white-space: nowrap;
 }
 
 
-/* لو الـ HTML لسه فيه AI، نخليه ذهبي بشكل بسيط */
+/* إخفاء AI من غير ما نلمس HTML */
 
 .brand-logo span {
 
-    color: var(--gold);
+    display: none;
 }
 
 
-/* BRAND TEXT */
-
-.brand-text {
-
-    border-right:
-        1px solid var(--line);
-
-    padding-right: 14px;
-}
-
+/* TEXT BESIDE LOGO */
 
 .brand-text strong {
 
@@ -172,11 +162,9 @@ body {
 
     font-size: 14px;
 
-    font-weight: 700;
-
     color: var(--navy);
 
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 
@@ -184,13 +172,11 @@ body {
 
     display: block;
 
-    font-size: 10px;
+    font-size: 11px;
 
     color: var(--muted);
 
     line-height: 1.5;
-
-    margin-top: 2px;
 }
 
 
@@ -202,8 +188,6 @@ body {
 
     display: flex;
 
-    align-items: center;
-
     gap: 30px;
 }
 
@@ -214,11 +198,11 @@ body {
 
     color: var(--muted);
 
-    font-size: 13px;
+    font-size: 14px;
 
     font-weight: 600;
 
-    transition: .2s ease;
+    transition: .2s;
 }
 
 
@@ -242,16 +226,14 @@ body {
     background:
         linear-gradient(
             120deg,
-            var(--navy) 0%,
+            var(--navy),
             var(--navy-2) 60%,
-            var(--navy) 100%
+            var(--navy)
         );
 
     color: var(--white);
 }
 
-
-/* HERO BACKGROUND */
 
 .hero-background {
 
@@ -259,7 +241,7 @@ body {
 
     inset: 0;
 
-    opacity: .07;
+    opacity: .10;
 
     background-image:
         radial-gradient(
@@ -269,8 +251,6 @@ body {
         );
 
     background-size: 35px 35px;
-
-    pointer-events: none;
 }
 
 
@@ -285,21 +265,17 @@ body {
 }
 
 
-/* LABEL */
-
 .hero-label {
 
     color: var(--gold-light);
 
     font-size: 12px;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 
     font-weight: 700;
 }
 
-
-/* HERO TITLE */
 
 .hero h1 {
 
@@ -321,7 +297,7 @@ body {
 
     color: #e8edf1;
 
-    font-size: 15px;
+    font-size: 16px;
 
     margin-bottom: 35px;
 }
@@ -343,17 +319,13 @@ body {
 
 .newsletter-tab {
 
-    border:
-        1px solid rgba(255,255,255,.25);
+    border: 1px solid rgba(255,255,255,.25);
 
-    background:
-        rgba(255,255,255,.08);
+    background: rgba(255,255,255,.10);
 
     color: var(--white);
 
-    padding:
-        11px
-        18px;
+    padding: 11px 18px;
 
     border-radius: 9px;
 
@@ -365,7 +337,7 @@ body {
 
     cursor: pointer;
 
-    transition: .25s ease;
+    transition: .25s;
 }
 
 
@@ -381,11 +353,9 @@ body {
 
 .newsletter-tab:hover {
 
-    background:
-        rgba(255,255,255,.16);
+    background: rgba(255,255,255,.18);
 
-    transform:
-        translateY(-1px);
+    transform: translateY(-1px);
 }
 
 
@@ -413,12 +383,9 @@ body {
 
     margin-right: 5px;
 
-    padding:
-        2px
-        6px;
+    padding: 2px 6px;
 
-    background:
-        rgba(255,255,255,.15);
+    background: rgba(255,255,255,.15);
 
     border-radius: 20px;
 }
@@ -453,8 +420,7 @@ body {
 
     margin-bottom: 30px;
 
-    border-bottom:
-        1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 }
 
 
@@ -486,12 +452,9 @@ body {
 
     color: var(--navy);
 
-    border:
-        1px solid var(--gold-light);
+    border: 1px solid var(--gold-light);
 
-    padding:
-        7px
-        14px;
+    padding: 7px 14px;
 
     border-radius: 8px;
 
@@ -526,8 +489,7 @@ body {
 
     background: var(--white);
 
-    border:
-        1px solid var(--line);
+    border: 1px solid var(--line);
 
     border-radius: 16px;
 
@@ -549,12 +511,9 @@ body {
 
     box-shadow:
         0 5px 20px
-        rgba(12,45,74,.035);
+        rgba(20,55,90,.035);
 
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
+    transition: .25s;
 }
 
 
@@ -573,24 +532,22 @@ body {
     width: 4px;
 
     background: var(--gold);
+
+    opacity: .9;
 }
 
 
 .archive-card:hover {
 
-    transform:
-        translateY(-5px);
+    transform: translateY(-5px);
 
-    border-color:
-        var(--gold-light);
+    border-color: var(--gold-light);
 
     box-shadow:
         0 15px 35px
-        rgba(12,45,74,.10);
+        rgba(20,55,90,.09);
 }
 
-
-/* TOP */
 
 .archive-card-top {
 
@@ -624,9 +581,7 @@ body {
 
     border-radius: 6px;
 
-    padding:
-        3px
-        8px;
+    padding: 3px 8px;
 
     font-size: 10px;
 
@@ -653,8 +608,6 @@ body {
     font-size: 11px;
 }
 
-
-/* BOTTOM */
 
 .archive-card-bottom {
 
@@ -706,16 +659,14 @@ body {
 
 .archive-card:hover .archive-card-arrow {
 
-    transform:
-        translateX(-3px);
+    transform: translateX(-3px);
 
-    background:
-        var(--gold-light);
+    background: var(--gold-light);
 }
 
 
 /* =========================================================
-   ARCHIVE EMPTY
+   EMPTY ARCHIVE
 ========================================================= */
 
 .archive-empty {
@@ -724,8 +675,7 @@ body {
 
     background: var(--white);
 
-    border:
-        1px dashed #c7d2db;
+    border: 1px dashed #c7d2db;
 
     border-radius: 15px;
 
@@ -790,13 +740,15 @@ body {
 
 .newsletter-page-hero p {
 
-    color: #dce6ed;
+    color: #dce5eb;
 
     font-size: 14px;
 }
 
 
-/* BACK BUTTON */
+/* =========================================================
+   BACK BUTTON
+========================================================= */
 
 .back-button {
 
@@ -806,17 +758,13 @@ body {
 
     gap: 7px;
 
-    color: #e0e8ed;
+    color: #e8edf1;
 
-    border:
-        1px solid rgba(255,255,255,.25);
+    border: 1px solid rgba(255,255,255,.25);
 
-    background:
-        rgba(255,255,255,.07);
+    background: rgba(255,255,255,.08);
 
-    padding:
-        7px
-        13px;
+    padding: 7px 13px;
 
     border-radius: 7px;
 
@@ -834,8 +782,7 @@ body {
 
 .back-button:hover {
 
-    background:
-        rgba(255,255,255,.15);
+    background: rgba(255,255,255,.18);
 }
 
 
@@ -847,18 +794,15 @@ body {
 
     background: var(--white);
 
-    border:
-        1px solid var(--line);
+    border: 1px solid var(--line);
 
     border-radius: 18px;
 
-    padding:
-        29px
-        30px;
+    padding: 29px 30px;
 
     box-shadow:
         0 8px 30px
-        rgba(12,45,74,.05);
+        rgba(20,55,90,.05);
 
     margin-bottom: 50px;
 }
@@ -911,9 +855,7 @@ body {
 
     border-radius: 9px;
 
-    padding:
-        13px
-        14px;
+    padding: 13px 14px;
 
     color: var(--ink);
 
@@ -934,7 +876,7 @@ body {
 
 
 /* =========================================================
-   SECTION
+   SECTIONS
 ========================================================= */
 
 .news-section {
@@ -983,20 +925,17 @@ body {
 
     background: var(--white);
 
-    border:
-        1px solid var(--line);
+    border: 1px solid var(--line);
 
     border-radius: 18px;
 
-    padding:
-        28px
-        31px;
+    padding: 28px 31px;
 
     overflow: hidden;
 
     box-shadow:
         0 8px 28px
-        rgba(12,45,74,.05);
+        rgba(20,55,90,.05);
 
     transition: .25s;
 }
@@ -1022,12 +961,11 @@ body {
 
 .featured-news:hover {
 
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 
     box-shadow:
         0 14px 35px
-        rgba(12,45,74,.08);
+        rgba(20,55,90,.08);
 }
 
 
@@ -1056,8 +994,7 @@ body {
 
     background: var(--white);
 
-    border:
-        1px solid var(--line);
+    border: 1px solid var(--line);
 
     border-radius: 15px;
 
@@ -1067,18 +1004,17 @@ body {
 
     box-shadow:
         0 5px 20px
-        rgba(12,45,74,.035);
+        rgba(20,55,90,.035);
 }
 
 
 .news-card:hover {
 
-    transform:
-        translateY(-3px);
+    transform: translateY(-3px);
 
     box-shadow:
         0 12px 30px
-        rgba(12,45,74,.08);
+        rgba(20,55,90,.08);
 }
 
 
@@ -1117,7 +1053,7 @@ body {
 
 
 /* =========================================================
-   NEWS TITLE
+   TITLES
 ========================================================= */
 
 .news-card h4,
@@ -1140,7 +1076,7 @@ body {
 
 
 /* =========================================================
-   NEWS TEXT
+   TEXT
 ========================================================= */
 
 .news-card p,
@@ -1188,9 +1124,7 @@ body {
 
     border-radius: 7px;
 
-    padding:
-        6px
-        13px;
+    padding: 6px 13px;
 
     font-family: inherit;
 
@@ -1269,8 +1203,7 @@ body {
 
     background: var(--white);
 
-    border:
-        1px dashed #c7d2db;
+    border: 1px dashed #c7d2db;
 
     border-radius: 15px;
 
@@ -1288,10 +1221,7 @@ body {
 
     height: 46px;
 
-    margin:
-        auto
-        auto
-        12px;
+    margin: auto auto 12px;
 
     border-radius: 50%;
 
@@ -1335,8 +1265,7 @@ body {
 
     background: var(--white);
 
-    border-top:
-        1px solid var(--line);
+    border-top: 1px solid var(--line);
 }
 
 
@@ -1398,16 +1327,12 @@ footer {
     background: var(--navy);
 
     color: #cbd7e0;
-
-    border-top:
-        3px solid
-        var(--gold);
 }
 
 
 .footer-container {
 
-    min-height: 90px;
+    min-height: 85px;
 
     display: flex;
 
@@ -1415,9 +1340,7 @@ footer {
 
     justify-content: space-between;
 
-    padding:
-        10px
-        0;
+    padding: 15px 0;
 }
 
 
@@ -1425,23 +1348,21 @@ footer {
 
 .footer-logo {
 
-    font-family:
-        Arial,
-        sans-serif;
+    font-family: Arial, sans-serif;
 
     font-size: 20px;
 
     font-weight: 900;
 
-    letter-spacing: -1px;
-
     color: var(--white);
+
+    line-height: 1;
 }
 
 
 .footer-logo span {
 
-    color: var(--gold);
+    display: none;
 }
 
 
@@ -1453,8 +1374,7 @@ footer {
 
     color: #cbd7e0;
 
-    transform:
-        translateY(5px);
+    margin-top: 8px;
 }
 
 
@@ -1506,45 +1426,13 @@ footer {
 
     .header-container {
 
-        padding:
-            13px
-            0;
+        padding: 13px 0;
     }
 
 
     .navigation {
 
         display: none;
-    }
-
-
-    .brand {
-
-        gap: 10px;
-    }
-
-
-    .brand-logo {
-
-        font-size: 22px;
-    }
-
-
-    .brand-text {
-
-        padding-right: 10px;
-    }
-
-
-    .brand-text strong {
-
-        font-size: 11px;
-    }
-
-
-    .brand-text span {
-
-        font-size: 9px;
     }
 
 
@@ -1574,8 +1462,7 @@ footer {
         display: grid;
 
         grid-template-columns:
-            1fr
-            1fr;
+            1fr 1fr;
     }
 
 
@@ -1667,18 +1554,15 @@ footer {
 
         justify-content: center;
 
-        gap: 7px;
+        gap: 4px;
 
-        padding:
-            18px
-            0;
+        padding: 18px 0;
     }
 
 
     .footer-container p {
 
-        transform:
-            translateY(3px);
+        margin-top: 3px;
 
         text-align: center;
     }

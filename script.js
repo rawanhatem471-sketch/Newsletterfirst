@@ -942,8 +942,8 @@ function renderArchive(type = "egypt") {
 
         archiveTitle.textContent =
             type === "egypt"
-                ? "أعداد النشرات المصرية"
-                : "أعداد النشرات العربية";
+                ? "أعداد النشرة المصرية"
+                : "أعداد النشرة العربية";
 
     }
 
@@ -959,8 +959,8 @@ function renderArchive(type = "egypt") {
 
         archiveType.textContent =
             type === "egypt"
-                ? "النشرات المصرية"
-                : "النشرات العربية";
+                ? "النشرة المصرية"
+                : "النشرة العربية";
 
     }
 

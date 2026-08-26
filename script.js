@@ -892,15 +892,33 @@ function renderArchive(type = "egypt") {
         );
 
 
-    const archiveType =
+    /* =========================
+       ARCHIVE TITLE
+    ========================= */
+
+    const archiveTitle =
         document.getElementById(
-            "archiveType"
+            "archiveTitle"
         );
 
 
-    const archiveCount =
+    if (archiveTitle) {
+
+        archiveTitle.textContent =
+            type === "egypt"
+                ? "أعداد النشرات المصرية"
+                : "أعداد النشرات العربية";
+
+    }
+
+
+    /* =========================
+       ARCHIVE TYPE
+    ========================= */
+
+    const archiveType =
         document.getElementById(
-            "archiveCount"
+            "archiveType"
         );
 
 
@@ -914,13 +932,74 @@ function renderArchive(type = "egypt") {
     }
 
 
+    /* =========================
+       ARCHIVE COUNT
+    ========================= */
+
+    const archiveCount =
+        document.getElementById(
+            "archiveCount"
+        );
+
+
     if (archiveCount) {
 
         archiveCount.textContent =
-            `${filtered.length} ${type === "egypt" ? "نشرة" : "عدد"}`;
+            `${filtered.length} ${
+                type === "egypt"
+                    ? "نشرة"
+                    : "عدد"
+            }`;
 
     }
 
+
+    /* =========================
+       RENDER NEWSLETTERS
+    ========================= */
+
+    archive.innerHTML =
+        filtered
+            .map(newsletter => {
+
+                return `
+                    <article class="archive-card">
+
+                        <div class="archive-card-content">
+
+                            <span class="archive-card-type">
+                                ${
+                                    type === "egypt"
+                                        ? "النشرة المصرية"
+                                        : "النشرة العربية"
+                                }
+                            </span>
+
+                            <h3>
+                                ${newsletter.title}
+                            </h3>
+
+                            <p>
+                                ${newsletter.number}
+                            </p>
+
+                        </div>
+
+                        <button
+                            onclick="openNewsletter('${newsletter.id}')">
+
+                            قراءة النشرة
+                            ↗
+
+                        </button>
+
+                    </article>
+                `;
+
+            })
+            .join("");
+
+}
 
     if (!filtered.length) {
 

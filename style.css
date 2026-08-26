@@ -6,6 +6,40 @@
 
 
 /* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --navy: #0c2d4a;
+
+    --navy-2: #123e61;
+
+    --gold: #c9a24b;
+
+    --gold-light: #ead9a8;
+
+    --ink: #172330;
+
+    --muted: #687787;
+
+    --line: #dfe5ea;
+
+    --bg: #f5f7f9;
+
+    --white: #ffffff;
+
+    --success: #1d7950;
+
+    --shadow:
+        0 14px 35px
+        rgba(12,45,74,.10);
+
+    --radius: 14px;
+}
+
+
+/* =========================================================
    RESET
 ========================================================= */
 
@@ -21,9 +55,9 @@ html {
 
 body {
 
-    background: #f4f7fa;
+    background: var(--bg);
 
-    color: #123b5a;
+    color: var(--ink);
 
     font-family:
         "IBM Plex Sans Arabic",
@@ -58,9 +92,10 @@ body {
 
     height: 78px;
 
-    background: #ffffff;
+    background: var(--white);
 
-    border-bottom: 1px solid #dfe7ed;
+    border-bottom:
+        1px solid var(--line);
 
     position: sticky;
 
@@ -82,9 +117,7 @@ body {
 }
 
 
-/* =========================================================
-   BRAND
-========================================================= */
+/* BRAND */
 
 .brand {
 
@@ -93,8 +126,6 @@ body {
     align-items: center;
 
     gap: 13px;
-
-    min-height: 42px;
 }
 
 
@@ -102,21 +133,19 @@ body {
 
     font-family: Arial, sans-serif;
 
-    font-size: 24px;
+    font-size: 23px;
 
     font-weight: 900;
 
     letter-spacing: -1.5px;
 
-    color: #063b61;
-
-    line-height: 1;
+    color: var(--navy);
 }
 
 
 .brand-logo span {
 
-    color: #078b91;
+    color: var(--gold);
 }
 
 
@@ -126,9 +155,7 @@ body {
 
     font-size: 14px;
 
-    color: #123b5a;
-
-    line-height: 1.5;
+    color: var(--navy);
 }
 
 
@@ -138,15 +165,11 @@ body {
 
     font-size: 11px;
 
-    color: #8497a8;
-
-    line-height: 1.5;
+    color: var(--muted);
 }
 
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+/* NAV */
 
 .navigation {
 
@@ -160,7 +183,7 @@ body {
 
     text-decoration: none;
 
-    color: #46647e;
+    color: var(--muted);
 
     font-size: 14px;
 
@@ -172,7 +195,7 @@ body {
 
 .navigation a:hover {
 
-    color: #07858b;
+    color: var(--navy);
 }
 
 
@@ -190,12 +213,12 @@ body {
     background:
         linear-gradient(
             120deg,
-            #06345c,
-            #064b73 55%,
-            #087b80
+            var(--navy),
+            var(--navy-2) 55%,
+            #194a6d
         );
 
-    color: white;
+    color: var(--white);
 }
 
 
@@ -224,18 +247,15 @@ body {
     position: relative;
 
     padding:
-
         70px
-
         0
-
         36px;
 }
 
 
 .hero-label {
 
-    color: #9ddfe0;
+    color: var(--gold-light);
 
     font-size: 12px;
 
@@ -263,7 +283,7 @@ body {
 
     max-width: 700px;
 
-    color: #e1eff5;
+    color: #e7edf2;
 
     font-size: 16px;
 
@@ -287,11 +307,14 @@ body {
 
 .newsletter-tab {
 
-    border: 1px solid rgba(255,255,255,.25);
+    border:
+        1px solid
+        rgba(255,255,255,.25);
 
-    background: rgba(255,255,255,.10);
+    background:
+        rgba(255,255,255,.10);
 
-    color: white;
+    color: var(--white);
 
     padding: 11px 18px;
 
@@ -321,7 +344,8 @@ body {
 
 .newsletter-tab:hover {
 
-    background: rgba(255,255,255,.2);
+    background:
+        rgba(255,255,255,.2);
 
     transform: translateY(-1px);
 }
@@ -329,11 +353,11 @@ body {
 
 .newsletter-tab.active {
 
-    background: white;
+    background: var(--white);
 
-    color: #063f65;
+    color: var(--navy);
 
-    border-color: white;
+    border-color: var(--white);
 }
 
 
@@ -353,7 +377,8 @@ body {
 
     padding: 2px 6px;
 
-    background: rgba(255,255,255,.15);
+    background:
+        rgba(255,255,255,.15);
 
     border-radius: 20px;
 }
@@ -366,18 +391,13 @@ body {
 .newsletter-container {
 
     padding:
-
         55px
-
         0
-
         85px;
 }
 
 
-/* =========================================================
-   ARCHIVE HEADER
-========================================================= */
+/* ARCHIVE HEADER */
 
 .archive-header {
 
@@ -393,13 +413,14 @@ body {
 
     margin-bottom: 30px;
 
-    border-bottom: 1px solid #dbe5ec;
+    border-bottom:
+        1px solid var(--line);
 }
 
 
 .issue-type {
 
-    color: #07858b;
+    color: var(--gold);
 
     font-size: 13px;
 
@@ -409,7 +430,7 @@ body {
 
 .archive-header h2 {
 
-    color: #123b5a;
+    color: var(--navy);
 
     font-size: 29px;
 
@@ -421,11 +442,13 @@ body {
 
 .archive-count {
 
-    background: #e8f3f4;
+    background: #f4ead0;
 
-    color: #08777e;
+    color: var(--navy);
 
-    border: 1px solid #c9e2e4;
+    border:
+        1px solid
+        var(--gold-light);
 
     padding: 7px 14px;
 
@@ -460,9 +483,11 @@ body {
 
     position: relative;
 
-    background: white;
+    background: var(--white);
 
-    border: 1px solid #dfe8ef;
+    border:
+        1px solid
+        var(--line);
 
     border-radius: 16px;
 
@@ -484,7 +509,7 @@ body {
 
     box-shadow:
         0 5px 20px
-        rgba(20,55,90,.035);
+        rgba(12,45,74,.035);
 
     transition: .25s;
 }
@@ -504,7 +529,7 @@ body {
 
     width: 4px;
 
-    background: #087b83;
+    background: var(--gold);
 
     opacity: .9;
 }
@@ -514,11 +539,11 @@ body {
 
     transform: translateY(-5px);
 
-    border-color: #c5d9e4;
+    border-color:
+        var(--gold-light);
 
     box-shadow:
-        0 15px 35px
-        rgba(20,55,90,.09);
+        var(--shadow);
 }
 
 
@@ -538,7 +563,7 @@ body {
 
 .archive-card-type {
 
-    color: #087b83;
+    color: var(--gold);
 
     font-size: 10px;
 
@@ -548,9 +573,9 @@ body {
 
 .archive-card-number {
 
-    background: #edf5f6;
+    background: #f4ead0;
 
-    color: #08747b;
+    color: var(--navy);
 
     border-radius: 6px;
 
@@ -564,7 +589,7 @@ body {
 
 .archive-card h3 {
 
-    color: #123b5a;
+    color: var(--navy);
 
     font-size: 19px;
 
@@ -576,7 +601,7 @@ body {
 
 .archive-card-date {
 
-    color: #8194a5;
+    color: var(--muted);
 
     font-size: 11px;
 }
@@ -598,7 +623,7 @@ body {
 
 .archive-card-link {
 
-    color: #087b83;
+    color: var(--navy-2);
 
     font-size: 11px;
 
@@ -614,9 +639,9 @@ body {
 
     border-radius: 50%;
 
-    background: #edf5f6;
+    background: #f4ead0;
 
-    color: #08747b;
+    color: var(--navy);
 
     display: flex;
 
@@ -634,7 +659,7 @@ body {
 
     transform: translateX(-3px);
 
-    background: #dcecee;
+    background: var(--gold-light);
 }
 
 
@@ -646,9 +671,11 @@ body {
 
     grid-column: 1 / -1;
 
-    background: white;
+    background: var(--white);
 
-    border: 1px dashed #cbd9e5;
+    border:
+        1px dashed
+        #c7d2db;
 
     border-radius: 15px;
 
@@ -656,7 +683,7 @@ body {
 
     text-align: center;
 
-    color: #8195a6;
+    color: var(--muted);
 }
 
 
@@ -664,7 +691,7 @@ body {
 
     display: block;
 
-    color: #526e84;
+    color: var(--navy-2);
 
     font-size: 15px;
 
@@ -713,15 +740,13 @@ body {
 
 .newsletter-page-hero p {
 
-    color: #dcecf3;
+    color: #dce5eb;
 
     font-size: 14px;
 }
 
 
-/* =========================================================
-   BACK BUTTON
-========================================================= */
+/* BACK BUTTON */
 
 .back-button {
 
@@ -731,11 +756,14 @@ body {
 
     gap: 7px;
 
-    color: #e0f2f4;
+    color: var(--white);
 
-    border: 1px solid rgba(255,255,255,.25);
+    border:
+        1px solid
+        rgba(255,255,255,.25);
 
-    background: rgba(255,255,255,.08);
+    background:
+        rgba(255,255,255,.08);
 
     padding: 7px 13px;
 
@@ -755,7 +783,8 @@ body {
 
 .back-button:hover {
 
-    background: rgba(255,255,255,.18);
+    background:
+        rgba(255,255,255,.18);
 }
 
 
@@ -765,19 +794,19 @@ body {
 
 .newsletter-intro {
 
-    background: white;
+    background: var(--white);
 
-    border: 1px solid #e0e8ef;
+    border:
+        1px solid
+        var(--line);
 
     border-radius: 18px;
 
     padding: 29px 30px;
 
     box-shadow:
-
         0 8px 30px
-
-        rgba(20,55,90,.05);
+        rgba(12,45,74,.05);
 
     margin-bottom: 50px;
 }
@@ -785,7 +814,7 @@ body {
 
 .newsletter-intro h3 {
 
-    color: #064b73;
+    color: var(--navy);
 
     font-size: 21px;
 
@@ -795,7 +824,7 @@ body {
 
 .newsletter-intro > p {
 
-    color: #607589;
+    color: var(--muted);
 
     font-size: 14px;
 
@@ -822,19 +851,17 @@ body {
 
 .highlight {
 
-    background: #f2f7fa;
+    background: #f1f4f7;
 
     border-right:
-
         3px solid
-
-        #087b83;
+        var(--gold);
 
     border-radius: 9px;
 
     padding: 13px 14px;
 
-    color: #2b4c66;
+    color: var(--ink);
 
     font-size: 12px;
 
@@ -844,7 +871,7 @@ body {
 
 .highlight-number {
 
-    color: #087b83;
+    color: var(--gold);
 
     font-weight: 800;
 
@@ -880,13 +907,13 @@ body {
 
     height: 2px;
 
-    background: #0a9699;
+    background: var(--gold);
 }
 
 
 .section-heading h3 {
 
-    color: #123b5a;
+    color: var(--navy);
 
     font-size: 24px;
 }
@@ -900,9 +927,11 @@ body {
 
     position: relative;
 
-    background: white;
+    background: var(--white);
 
-    border: 1px solid #dfe8ef;
+    border:
+        1px solid
+        var(--line);
 
     border-radius: 18px;
 
@@ -911,10 +940,8 @@ body {
     overflow: hidden;
 
     box-shadow:
-
         0 8px 28px
-
-        rgba(20,55,90,.05);
+        rgba(12,45,74,.05);
 
     transition: .25s;
 }
@@ -934,7 +961,7 @@ body {
 
     width: 5px;
 
-    background: #087b83;
+    background: var(--gold);
 }
 
 
@@ -943,16 +970,9 @@ body {
     transform: translateY(-2px);
 
     box-shadow:
-
-        0 14px 35px
-
-        rgba(20,55,90,.08);
+        var(--shadow);
 }
 
-
-/* =========================================================
-   NEWS CARD
-========================================================= */
 
 .news-grid {
 
@@ -967,11 +987,17 @@ body {
 }
 
 
+/* =========================================================
+   NEWS CARD
+========================================================= */
+
 .news-card {
 
-    background: white;
+    background: var(--white);
 
-    border: 1px solid #dfe8ef;
+    border:
+        1px solid
+        var(--line);
 
     border-radius: 15px;
 
@@ -980,10 +1006,8 @@ body {
     transition: .25s;
 
     box-shadow:
-
         0 5px 20px
-
-        rgba(20,55,90,.035);
+        rgba(12,45,74,.035);
 }
 
 
@@ -992,16 +1016,12 @@ body {
     transform: translateY(-3px);
 
     box-shadow:
-
         0 12px 30px
-
-        rgba(20,55,90,.08);
+        rgba(12,45,74,.08);
 }
 
 
-/* =========================================================
-   META
-========================================================= */
+/* META */
 
 .news-meta {
 
@@ -1011,7 +1031,7 @@ body {
 
     gap: 7px;
 
-    color: #087b83;
+    color: var(--gold);
 
     font-size: 10px;
 
@@ -1027,20 +1047,18 @@ body {
 
     height: 6px;
 
-    background: #0a9699;
+    background: var(--gold);
 
     border-radius: 50%;
 }
 
 
-/* =========================================================
-   TITLE
-========================================================= */
+/* TITLE */
 
 .news-card h4,
 .featured-news h4 {
 
-    color: #123b5a;
+    color: var(--navy);
 
     font-size: 18px;
 
@@ -1056,14 +1074,12 @@ body {
 }
 
 
-/* =========================================================
-   TEXT
-========================================================= */
+/* TEXT */
 
 .news-card p,
 .featured-news p {
 
-    color: #64788b;
+    color: var(--muted);
 
     font-size: 13px;
 
@@ -1099,9 +1115,9 @@ body {
 
     border: none;
 
-    background: #edf5f6;
+    background: #f4ead0;
 
-    color: #08747b;
+    color: var(--navy);
 
     border-radius: 7px;
 
@@ -1121,7 +1137,7 @@ body {
 
 .share-button:hover {
 
-    background: #dcecee;
+    background: var(--gold-light);
 }
 
 
@@ -1138,11 +1154,8 @@ body {
     gap: 10px;
 
     margin:
-
         25px
-
         0
-
         15px;
 }
 
@@ -1155,9 +1168,9 @@ body {
 
     border-radius: 50%;
 
-    background: #e5f1f4;
+    background: #eef2f5;
 
-    color: #075778;
+    color: var(--navy);
 
     display: flex;
 
@@ -1173,7 +1186,7 @@ body {
 
 .country-heading h4 {
 
-    color: #34536d;
+    color: var(--navy-2);
 
     font-size: 18px;
 }
@@ -1185,9 +1198,11 @@ body {
 
 .empty-state {
 
-    background: white;
+    background: var(--white);
 
-    border: 1px dashed #cbd9e5;
+    border:
+        1px dashed
+        #c7d2db;
 
     border-radius: 15px;
 
@@ -1195,7 +1210,7 @@ body {
 
     text-align: center;
 
-    color: #8195a6;
+    color: var(--muted);
 }
 
 
@@ -1209,7 +1224,7 @@ body {
 
     border-radius: 50%;
 
-    background: #eef4f7;
+    background: #eef2f5;
 
     display: flex;
 
@@ -1217,7 +1232,7 @@ body {
 
     justify-content: center;
 
-    color: #7890a1;
+    color: var(--muted);
 
     font-size: 18px;
 }
@@ -1227,7 +1242,7 @@ body {
 
     display: block;
 
-    color: #526e84;
+    color: var(--navy-2);
 
     font-size: 14px;
 
@@ -1247,28 +1262,25 @@ body {
 
 .about {
 
-    background: white;
+    background: var(--white);
 
-    border-top: 1px solid #dce6ed;
+    border-top:
+        1px solid
+        var(--line);
 }
 
 
 .about-container {
 
     padding:
-
         50px
-
         0
-
         65px;
 
     display: grid;
 
     grid-template-columns:
-
         1fr
-
         1fr;
 
     gap: 50px;
@@ -1277,7 +1289,7 @@ body {
 
 .section-label {
 
-    color: #087b83;
+    color: var(--gold);
 
     font-size: 13px;
 
@@ -1287,7 +1299,7 @@ body {
 
 .about h2 {
 
-    color: #123b5a;
+    color: var(--navy);
 
     font-size: 26px;
 
@@ -1299,7 +1311,7 @@ body {
 
 .about p {
 
-    color: #697d90;
+    color: var(--muted);
 
     font-size: 14px;
 
@@ -1313,31 +1325,21 @@ body {
 
 footer {
 
-    background: #0b3554;
+    background: var(--navy);
 
-    color: #c9d8e3;
-
-    width: 100%;
-
-    direction: rtl;
+    color: #cbd7e0;
 }
 
 
 .footer-container {
 
-    width: min(1180px, 92%);
-
-    min-height: 95px;
-
-    margin: auto;
+    min-height: 75px;
 
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
-
-    gap: 30px;
 }
 
 
@@ -1345,35 +1347,25 @@ footer {
 
     font-family: Arial, sans-serif;
 
-    font-size: 21px;
+    font-size: 20px;
 
     font-weight: 900;
 
-    line-height: 1;
-
-    color: #ffffff;
-
-    white-space: nowrap;
+    color: var(--white);
 }
 
 
 .footer-logo span {
 
-    color: #10a0a3;
+    color: var(--gold);
 }
 
 
 .footer-container p {
 
-    margin: 0;
-
     font-size: 11px;
 
-    line-height: 1.8;
-
-    color: #c4d3de;
-
-    text-align: right;
+    color: #cbd7e0;
 }
 
 
@@ -1437,7 +1429,10 @@ footer {
 
     .hero-container {
 
-        padding: 45px 0 28px;
+        padding:
+            45px
+            0
+            28px;
     }
 
 
@@ -1458,7 +1453,8 @@ footer {
         display: grid;
 
         grid-template-columns:
-            1fr 1fr;
+            1fr
+            1fr;
     }
 
 
@@ -1544,38 +1540,15 @@ footer {
     }
 
 
-    /* =====================================================
-       MOBILE FOOTER
-    ===================================================== */
-
     .footer-container {
-
-        min-height: 100px;
 
         flex-direction: column;
 
         justify-content: center;
 
-        align-items: center;
+        gap: 4px;
 
-        gap: 8px;
-
-        padding: 18px 0;
-
-        text-align: center;
+        padding: 15px 0;
     }
 
-
-    .footer-logo {
-
-        font-size: 20px;
-    }
-
-
-    .footer-container p {
-
-        text-align: center;
-
-        line-height: 1.7;
-    }
-
+}

@@ -388,3 +388,30 @@ footer {
 
     justify-content: space-between !important;
 }
+/* =========================================================
+   ELP HEADER LOGO
+========================================================= */
+
+.brand-logo {
+    font-family: Arial, sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 900 !important;
+    letter-spacing: -1.8px !important;
+    color: #0c2d4a !important;
+    line-height: 1 !important;
+}
+
+.brand-logo span {
+    color: #c9a24b !important;
+}
+
+
+/* =========================================================
+   FOOTER DESCRIPTION POSITION
+========================================================= */
+
+.footer-container p {
+    position: relative !important;
+    top: 8px !important;
+    line-height: 1.8 !important;
+}

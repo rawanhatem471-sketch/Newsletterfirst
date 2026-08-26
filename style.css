@@ -23,7 +23,7 @@ body {
 
     background: #f4f7fa;
 
-    color: #173b5b;
+    color: #123b5a;
 
     font-family:
         "IBM Plex Sans Arabic",
@@ -60,7 +60,7 @@ body {
 
     background: #ffffff;
 
-    border-bottom: 1px solid #e1e9f0;
+    border-bottom: 1px solid #dfe7ed;
 
     position: sticky;
 
@@ -82,7 +82,9 @@ body {
 }
 
 
-/* BRAND */
+/* =========================================================
+   BRAND
+========================================================= */
 
 .brand {
 
@@ -91,6 +93,8 @@ body {
     align-items: center;
 
     gap: 13px;
+
+    min-height: 42px;
 }
 
 
@@ -98,19 +102,21 @@ body {
 
     font-family: Arial, sans-serif;
 
-    font-size: 23px;
+    font-size: 24px;
 
     font-weight: 900;
 
     letter-spacing: -1.5px;
 
-    color: #074a7c;
+    color: #063b61;
+
+    line-height: 1;
 }
 
 
 .brand-logo span {
 
-    color: #13a2a4;
+    color: #078b91;
 }
 
 
@@ -120,7 +126,9 @@ body {
 
     font-size: 14px;
 
-    color: #173d5c;
+    color: #123b5a;
+
+    line-height: 1.5;
 }
 
 
@@ -131,10 +139,14 @@ body {
     font-size: 11px;
 
     color: #8497a8;
+
+    line-height: 1.5;
 }
 
 
-/* NAV */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .navigation {
 
@@ -160,7 +172,7 @@ body {
 
 .navigation a:hover {
 
-    color: #087d89;
+    color: #07858b;
 }
 
 
@@ -178,9 +190,9 @@ body {
     background:
         linear-gradient(
             120deg,
-            #063b6c,
-            #075a8d 55%,
-            #087c83
+            #06345c,
+            #064b73 55%,
+            #087b80
         );
 
     color: white;
@@ -223,7 +235,7 @@ body {
 
 .hero-label {
 
-    color: #a5e4e4;
+    color: #9ddfe0;
 
     font-size: 12px;
 
@@ -319,7 +331,7 @@ body {
 
     background: white;
 
-    color: #074878;
+    color: #063f65;
 
     border-color: white;
 }
@@ -363,7 +375,9 @@ body {
 }
 
 
-/* ARCHIVE HEADER */
+/* =========================================================
+   ARCHIVE HEADER
+========================================================= */
 
 .archive-header {
 
@@ -385,7 +399,7 @@ body {
 
 .issue-type {
 
-    color: #07818a;
+    color: #07858b;
 
     font-size: 13px;
 
@@ -395,7 +409,7 @@ body {
 
 .archive-header h2 {
 
-    color: #153e60;
+    color: #123b5a;
 
     font-size: 29px;
 
@@ -407,11 +421,11 @@ body {
 
 .archive-count {
 
-    background: #e8f4f5;
+    background: #e8f3f4;
 
-    color: #08757d;
+    color: #08777e;
 
-    border: 1px solid #cce7e8;
+    border: 1px solid #c9e2e4;
 
     padding: 7px 14px;
 
@@ -490,9 +504,9 @@ body {
 
     width: 4px;
 
-    background: #0a778a;
+    background: #087b83;
 
-    opacity: .8;
+    opacity: .9;
 }
 
 
@@ -500,7 +514,7 @@ body {
 
     transform: translateY(-5px);
 
-    border-color: #c8dce7;
+    border-color: #c5d9e4;
 
     box-shadow:
         0 15px 35px
@@ -524,7 +538,7 @@ body {
 
 .archive-card-type {
 
-    color: #087d85;
+    color: #087b83;
 
     font-size: 10px;
 
@@ -534,9 +548,9 @@ body {
 
 .archive-card-number {
 
-    background: #edf6f7;
+    background: #edf5f6;
 
-    color: #08777f;
+    color: #08747b;
 
     border-radius: 6px;
 
@@ -550,7 +564,7 @@ body {
 
 .archive-card h3 {
 
-    color: #173f60;
+    color: #123b5a;
 
     font-size: 19px;
 
@@ -584,7 +598,7 @@ body {
 
 .archive-card-link {
 
-    color: #087d85;
+    color: #087b83;
 
     font-size: 11px;
 
@@ -600,9 +614,9 @@ body {
 
     border-radius: 50%;
 
-    background: #edf6f7;
+    background: #edf5f6;
 
-    color: #08777f;
+    color: #08747b;
 
     display: flex;
 
@@ -620,7 +634,7 @@ body {
 
     transform: translateX(-3px);
 
-    background: #dceff1;
+    background: #dcecee;
 }
 
 
@@ -705,7 +719,9 @@ body {
 }
 
 
-/* BACK BUTTON */
+/* =========================================================
+   BACK BUTTON
+========================================================= */
 
 .back-button {
 
@@ -740,7 +756,6 @@ body {
 .back-button:hover {
 
     background: rgba(255,255,255,.18);
-
 }
 
 
@@ -770,7 +785,7 @@ body {
 
 .newsletter-intro h3 {
 
-    color: #084d7d;
+    color: #064b73;
 
     font-size: 21px;
 
@@ -813,7 +828,7 @@ body {
 
         3px solid
 
-        #0b788b;
+        #087b83;
 
     border-radius: 9px;
 
@@ -829,7 +844,7 @@ body {
 
 .highlight-number {
 
-    color: #0a7d87;
+    color: #087b83;
 
     font-weight: 800;
 
@@ -865,13 +880,13 @@ body {
 
     height: 2px;
 
-    background: #12a0a2;
+    background: #0a9699;
 }
 
 
 .section-heading h3 {
 
-    color: #143d5d;
+    color: #123b5a;
 
     font-size: 24px;
 }
@@ -919,7 +934,7 @@ body {
 
     width: 5px;
 
-    background: #0a778a;
+    background: #087b83;
 }
 
 
@@ -984,7 +999,9 @@ body {
 }
 
 
-/* META */
+/* =========================================================
+   META
+========================================================= */
 
 .news-meta {
 
@@ -994,7 +1011,7 @@ body {
 
     gap: 7px;
 
-    color: #087d85;
+    color: #087b83;
 
     font-size: 10px;
 
@@ -1010,18 +1027,20 @@ body {
 
     height: 6px;
 
-    background: #13a0a2;
+    background: #0a9699;
 
     border-radius: 50%;
 }
 
 
-/* TITLE */
+/* =========================================================
+   TITLE
+========================================================= */
 
 .news-card h4,
 .featured-news h4 {
 
-    color: #173f60;
+    color: #123b5a;
 
     font-size: 18px;
 
@@ -1037,7 +1056,9 @@ body {
 }
 
 
-/* TEXT */
+/* =========================================================
+   TEXT
+========================================================= */
 
 .news-card p,
 .featured-news p {
@@ -1078,9 +1099,9 @@ body {
 
     border: none;
 
-    background: #edf6f7;
+    background: #edf5f6;
 
-    color: #08777f;
+    color: #08747b;
 
     border-radius: 7px;
 
@@ -1100,7 +1121,7 @@ body {
 
 .share-button:hover {
 
-    background: #dceff1;
+    background: #dcecee;
 }
 
 
@@ -1134,9 +1155,9 @@ body {
 
     border-radius: 50%;
 
-    background: #e7f2f7;
+    background: #e5f1f4;
 
-    color: #0a567e;
+    color: #075778;
 
     display: flex;
 
@@ -1256,7 +1277,7 @@ body {
 
 .section-label {
 
-    color: #07818a;
+    color: #087b83;
 
     font-size: 13px;
 
@@ -1266,7 +1287,7 @@ body {
 
 .about h2 {
 
-    color: #163e5e;
+    color: #123b5a;
 
     font-size: 26px;
 
@@ -1292,21 +1313,31 @@ body {
 
 footer {
 
-    background: #103b5c;
+    background: #0b3554;
 
-    color: #c7d7e3;
+    color: #c9d8e3;
+
+    width: 100%;
+
+    direction: rtl;
 }
 
 
 .footer-container {
 
-    min-height: 75px;
+    width: min(1180px, 92%);
+
+    min-height: 95px;
+
+    margin: auto;
 
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
+
+    gap: 30px;
 }
 
 
@@ -1314,21 +1345,35 @@ footer {
 
     font-family: Arial, sans-serif;
 
-    font-size: 20px;
+    font-size: 21px;
 
     font-weight: 900;
+
+    line-height: 1;
+
+    color: #ffffff;
+
+    white-space: nowrap;
 }
 
 
 .footer-logo span {
 
-    color: #17a4a5;
+    color: #10a0a3;
 }
 
 
 .footer-container p {
 
+    margin: 0;
+
     font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #c4d3de;
+
+    text-align: right;
 }
 
 
@@ -1499,15 +1544,39 @@ footer {
     }
 
 
+    /* =====================================================
+       MOBILE FOOTER
+    ===================================================== */
+
     .footer-container {
+
+        min-height: 100px;
 
         flex-direction: column;
 
         justify-content: center;
 
-        gap: 4px;
+        align-items: center;
 
-        padding: 15px 0;
+        gap: 8px;
+
+        padding: 18px 0;
+
+        text-align: center;
+    }
+
+
+    .footer-logo {
+
+        font-size: 20px;
+    }
+
+
+    .footer-container p {
+
+        text-align: center;
+
+        line-height: 1.7;
     }
 
 }

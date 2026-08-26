@@ -3,43 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>النشرات القانونية | ELPAI</title>
+    <title>نشرة البوابة القانونية للتشريعات المصرية | ELP</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- ================= HEADER ================= -->
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
     <header class="site-header">
 
         <div class="header-container">
 
-            <div class="brand">
+            <!-- BRAND -->
+
+            <a href="index.html" class="brand">
 
                 <div class="brand-logo">
-                    ELP<span>AI</span>
+
+                    <span class="logo-elp">ELP</span>
+
                 </div>
 
                 <div class="brand-text">
-                    <strong>البوابة القانونية للتشريعات المصرية</strong>
-                    <span>النشرات القانونية</span>
+
+                    <strong>
+                        المعلومة القانونية في مكان واحد
+                    </strong>
+
+                    <span>
+                        البوابة القانونية للتشريعات المصرية
+                    </span>
+
                 </div>
 
-            </div>
+            </a>
+
+
+            <!-- NAVIGATION -->
 
             <nav class="navigation">
-                <a href="#newsletters">النشرات</a>
-                <a href="#about">عن النشرة</a>
+
+                <a href="#newsletters">
+                    النشرات
+                </a>
+
+                <a href="#about">
+                    عن النشرة
+                </a>
+
             </nav>
 
         </div>
@@ -47,7 +77,10 @@
     </header>
 
 
-    <!-- ================= HERO ================= -->
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
     <section class="hero">
 
@@ -56,59 +89,54 @@
         <div class="hero-container">
 
             <span class="hero-label">
-                ELPAI NEWSLETTER
+                ELP NEWSLETTER
             </span>
 
+
             <h1>
-                النشرات القانونية
+                نشرة البوابة القانونية
+                <br>
+                للتشريعات المصرية
             </h1>
 
+
             <p>
-                تابع أحدث المستجدات التشريعية والأخبار القانونية
-                من خلال أرشيف منظم للنشرات المصرية والعربية.
+                أهم المستجدات التشريعية والقانونية في صياغة منظمة
+                تساعد على الوصول إلى المعلومات ومتابعتها بسهولة.
             </p>
 
 
-            <!-- Newsletter Types -->
+            <!-- NEWSLETTER TYPES -->
 
             <div class="newsletter-tabs">
 
-                <button
-                    class="newsletter-tab active"
-                    data-type="egypt">
+                <button class="newsletter-tab active">
 
-                    <span>01</span>
-                    النشرات المصرية
+                    المستجدات التشريعية
 
                 </button>
 
 
-                <button
-                    class="newsletter-tab"
-                    data-type="arab">
+                <button class="newsletter-tab">
 
-                    <span>02</span>
-                    النشرات العربية
+                    الأخبار القانونية
 
                 </button>
 
 
-                <button class="newsletter-tab disabled">
+                <button class="newsletter-tab">
 
-                    <span>03</span>
-                    النشرة العالمية
-
-                    <small>قريبًا</small>
+                    القرارات والتحديثات
 
                 </button>
 
 
                 <button class="newsletter-tab disabled">
 
-                    <span>04</span>
-                    المؤلفات
-
-                    <small>قريبًا</small>
+                    النشرة الشهرية
+                    <small>
+                        قريبًا
+                    </small>
 
                 </button>
 
@@ -119,50 +147,340 @@
     </section>
 
 
-    <!-- ================= NEWSLETTER ARCHIVE ================= -->
 
-    <main
-        class="newsletter-container"
-        id="newsletters">
+    <!-- =====================================================
+         NEWSLETTER ARCHIVE
+    ====================================================== -->
 
-        <div class="archive-header">
+    <main id="newsletters">
 
-            <div>
+        <div class="newsletter-container">
 
-                <span class="issue-type" id="archiveType">
-                    النشرات المصرية
-                </span>
 
-               <h2 id="archiveTitle">
-    أعداد النشرات المصرية
-</h2>
+            <!-- ARCHIVE HEADER -->
+
+            <div class="archive-header">
+
+                <div>
+
+                    <span class="issue-type">
+                        أحدث النشرات
+                    </span>
+
+                    <h2>
+                        أرشيف النشرة
+                    </h2>
+
+                </div>
+
+
+                <div class="archive-count">
+                    06 أعداد
+                </div>
 
             </div>
 
-            <span
-                class="archive-count"
-                id="archiveCount">
-                0 نشرة
-            </span>
-
-        </div>
 
 
-        <!-- هنا JavaScript هيحط كل الأسابيع والأعداد -->
+            <!-- ARCHIVE CARDS -->
 
-        <div
-            class="newsletter-archive"
-            id="newsletterArchive">
+            <div class="newsletter-archive">
+
+
+                <!-- CARD 01 -->
+
+                <a href="newsletter-01.html" class="archive-card">
+
+                    <div>
+
+                        <div class="archive-card-top">
+
+                            <span class="archive-card-type">
+                                المستجدات التشريعية
+                            </span>
+
+                            <span class="archive-card-number">
+                                01
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            أبرز المستجدات القانونية والتشريعية
+                        </h3>
+
+
+                        <span class="archive-card-date">
+                            أغسطس 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-card-bottom">
+
+                        <span class="archive-card-link">
+                            عرض النشرة
+                        </span>
+
+                        <span class="archive-card-arrow">
+                            ←
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- CARD 02 -->
+
+                <a href="newsletter-02.html" class="archive-card">
+
+                    <div>
+
+                        <div class="archive-card-top">
+
+                            <span class="archive-card-type">
+                                الأخبار القانونية
+                            </span>
+
+                            <span class="archive-card-number">
+                                02
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            أهم الأخبار والتطورات القانونية
+                        </h3>
+
+
+                        <span class="archive-card-date">
+                            أغسطس 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-card-bottom">
+
+                        <span class="archive-card-link">
+                            عرض النشرة
+                        </span>
+
+                        <span class="archive-card-arrow">
+                            ←
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- CARD 03 -->
+
+                <a href="newsletter-03.html" class="archive-card">
+
+                    <div>
+
+                        <div class="archive-card-top">
+
+                            <span class="archive-card-type">
+                                القرارات والتحديثات
+                            </span>
+
+                            <span class="archive-card-number">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            قرارات وتحديثات قانونية مختارة
+                        </h3>
+
+
+                        <span class="archive-card-date">
+                            يوليو 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-card-bottom">
+
+                        <span class="archive-card-link">
+                            عرض النشرة
+                        </span>
+
+                        <span class="archive-card-arrow">
+                            ←
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- CARD 04 -->
+
+                <a href="newsletter-04.html" class="archive-card">
+
+                    <div>
+
+                        <div class="archive-card-top">
+
+                            <span class="archive-card-type">
+                                المستجدات التشريعية
+                            </span>
+
+                            <span class="archive-card-number">
+                                04
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            تشريعات جديدة وتعديلات قانونية
+                        </h3>
+
+
+                        <span class="archive-card-date">
+                            يوليو 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-card-bottom">
+
+                        <span class="archive-card-link">
+                            عرض النشرة
+                        </span>
+
+                        <span class="archive-card-arrow">
+                            ←
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- CARD 05 -->
+
+                <a href="newsletter-05.html" class="archive-card">
+
+                    <div>
+
+                        <div class="archive-card-top">
+
+                            <span class="archive-card-type">
+                                الأخبار القانونية
+                            </span>
+
+                            <span class="archive-card-number">
+                                05
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            متابعة لأبرز المستجدات القانونية
+                        </h3>
+
+
+                        <span class="archive-card-date">
+                            يونيو 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-card-bottom">
+
+                        <span class="archive-card-link">
+                            عرض النشرة
+                        </span>
+
+                        <span class="archive-card-arrow">
+                            ←
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- CARD 06 -->
+
+                <a href="newsletter-06.html" class="archive-card">
+
+                    <div>
+
+                        <div class="archive-card-top">
+
+                            <span class="archive-card-type">
+                                القرارات والتحديثات
+                            </span>
+
+                            <span class="archive-card-number">
+                                06
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            أحدث القرارات والتحديثات القانونية
+                        </h3>
+
+
+                        <span class="archive-card-date">
+                            يونيو 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="archive-card-bottom">
+
+                        <span class="archive-card-link">
+                            عرض النشرة
+                        </span>
+
+                        <span class="archive-card-arrow">
+                            ←
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
         </div>
 
     </main>
 
 
-    <!-- ================= ABOUT ================= -->
 
-    <section
-        class="about"
-        id="about">
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section class="about" id="about">
 
         <div class="about-container">
 
@@ -173,44 +491,77 @@
                 </span>
 
                 <h2>
-                    المعلومة القانونية<br>
+                    المعلومة القانونية
+                    <br>
                     في مكان واحد
                 </h2>
 
             </div>
 
 
-            <p>
-                تجمع نشرة البوابة القانونية للتشريعات المصرية
-                أهم المستجدات التشريعية والقانونية في صياغة منظمة
-                تساعد على الوصول إلى المعلومات ومتابعتها بسهولة.
-            </p>
+            <div>
+
+                <p>
+                    نشرة البوابة القانونية للتشريعات المصرية
+                    تجمع أهم المستجدات التشريعية والقانونية
+                    في صياغة منظمة تساعد على الوصول إلى المعلومات
+                    ومتابعتها بسهولة.
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
     <footer>
 
         <div class="footer-container">
 
-            <div class="footer-logo">
-                ELP<span>AI</span>
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <span class="logo-elp">
+                        ELP
+                    </span>
+
+                </div>
+
+
+                <p class="footer-title">
+                    نشرة البوابة القانونية للتشريعات المصرية
+                </p>
+
             </div>
 
-            <p>
-                البوابة القانونية للتشريعات المصرية
-            </p>
+
+            <div class="footer-info">
+
+                <p>
+                    أهم المستجدات التشريعية والقانونية
+                    في صياغة منظمة تساعد على الوصول إلى
+                    المعلومات ومتابعتها بسهولة.
+                </p>
+
+                <p class="footer-copy">
+                    © 2026 البوابة القانونية للتشريعات المصرية
+                </p>
+
+            </div>
+
 
         </div>
 
     </footer>
 
-
-    <script src="script.js"></script>
 
 </body>
 

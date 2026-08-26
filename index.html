@@ -5,11 +5,11 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>النشرة القانونية | ELPAI</title>
+    <title>النشرات القانونية | ELPAI</title>
+
+    <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- CSS -->
 
     <link rel="stylesheet" href="style.css">
 
@@ -34,10 +36,13 @@
 
     <div class="header-container">
 
+
+        <!-- BRAND -->
+
         <div class="brand">
 
             <div class="brand-logo">
-                ELP<span>AI</span>
+                ELP
             </div>
 
             <div class="brand-text">
@@ -55,13 +60,15 @@
         </div>
 
 
+        <!-- NAVIGATION -->
+
         <nav class="navigation">
 
             <a href="index.html">
                 النشرات
             </a>
 
-            <a href="index.html#about">
+            <a href="#about">
                 عن النشرة
             </a>
 
@@ -74,45 +81,54 @@
 
 
 <!-- =====================================================
-     NEWSLETTER HERO
+     HERO
 ===================================================== -->
 
-<section class="newsletter-page-hero">
+<section class="hero">
 
     <div class="hero-background"></div>
 
     <div class="hero-container">
 
-        <a
-            href="index.html"
-            class="back-button">
 
-            ← العودة إلى الأرشيف
-
-        </a>
-
-
-        <span
-            class="hero-label"
-            id="pageNewsletterType">
-
-            النشرة المصرية
-
+        <span class="hero-label">
+            ELP AI
         </span>
 
 
-        <h1 id="pageNewsletterTitle">
-
-            النشرة القانونية
-
+        <h1>
+            النشرات القانونية
         </h1>
 
 
-        <p id="pageNewsletterNumber">
-
-            --
-
+        <p>
+            تابع أهم المستجدات التشريعية والأخبار القانونية
+            وما يحدث في المجتمع القانوني المصري والعربي.
         </p>
+
+
+        <!-- TABS -->
+
+        <div class="newsletter-tabs">
+
+            <button
+                class="newsletter-tab active"
+                data-type="egypt">
+
+                النشرات المصرية
+
+            </button>
+
+
+            <button
+                class="newsletter-tab"
+                data-type="arab">
+
+                النشرات العربية
+
+            </button>
+
+        </div>
 
     </div>
 
@@ -121,42 +137,106 @@
 
 
 <!-- =====================================================
-     NEWSLETTER CONTENT
+     ARCHIVE
 ===================================================== -->
 
 <main class="newsletter-container">
 
 
-    <!-- INTRO -->
-
-    <section class="newsletter-intro">
-
-        <h3>
-            المقدمة
-        </h3>
+    <section>
 
 
-        <p id="newsletterIntro">
-            جاري تحميل النشرة...
-        </p>
+        <!-- ARCHIVE HEADER -->
 
+        <div class="archive-header">
+
+
+            <div>
+
+                <span
+                    class="issue-type"
+                    id="archiveType">
+
+                    النشرات المصرية
+
+                </span>
+
+
+                <h2 id="archiveTitle">
+
+                    أعداد النشرات المصرية
+
+                </h2>
+
+            </div>
+
+
+            <span
+                class="archive-count"
+                id="archiveCount">
+
+                0 نشرة
+
+            </span>
+
+
+        </div>
+
+
+
+        <!-- ARCHIVE CARDS -->
 
         <div
-            class="highlights"
-            id="newsletterHighlights">
+            class="newsletter-archive"
+            id="newsletterArchive">
+
         </div>
+
 
     </section>
 
+</main>
 
 
-    <!-- ALL SECTIONS -->
 
-    <div id="newsletterSections">
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about"
+    id="about">
+
+    <div class="about-container">
+
+
+        <div>
+
+            <span class="section-label">
+                عن النشرة
+            </span>
+
+
+            <h2>
+                متابعة قانونية مختصرة وموثوقة
+            </h2>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                تقدم النشرة القانونية ملخصاً لأهم المستجدات
+                التشريعية والأخبار القانونية في مصر والعالم العربي،
+                لتسهيل متابعة التطورات القانونية بشكل واضح ومنظم.
+            </p>
+
+        </div>
+
     </div>
 
-
-</main>
+</section>
 
 
 
@@ -168,9 +248,11 @@
 
     <div class="footer-container">
 
+
         <div class="footer-logo">
-            ELP<span>AI</span>
+            ELP
         </div>
+
 
         <p>
             البوابة القانونية للتشريعات المصرية
@@ -182,7 +264,12 @@
 
 
 
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
 <script src="script.js"></script>
+
 
 </body>
 

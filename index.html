@@ -2,10 +2,14 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>النشرات القانونية | ELPAI</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>النشرة القانونية | ELPAI</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +19,16 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header class="site-header">
 
@@ -32,15 +41,30 @@
             </div>
 
             <div class="brand-text">
-                <strong>البوابة القانونية للتشريعات المصرية</strong>
-                <span>النشرات القانونية</span>
+
+                <strong>
+                    البوابة القانونية للتشريعات المصرية
+                </strong>
+
+                <span>
+                    النشرات القانونية
+                </span>
+
             </div>
 
         </div>
 
+
         <nav class="navigation">
-            <a href="#newsletters">النشرات</a>
-            <a href="#about">عن النشرة</a>
+
+            <a href="index.html">
+                النشرات
+            </a>
+
+            <a href="index.html#about">
+                عن النشرة
+            </a>
+
         </nav>
 
     </div>
@@ -48,173 +72,97 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
 
-<section class="hero">
+<!-- =====================================================
+     NEWSLETTER HERO
+===================================================== -->
+
+<section class="newsletter-page-hero">
 
     <div class="hero-background"></div>
 
     <div class="hero-container">
 
-        <span class="hero-label">
-            ELPAI NEWSLETTER
+        <a
+            href="index.html"
+            class="back-button">
+
+            ← العودة إلى الأرشيف
+
+        </a>
+
+
+        <span
+            class="hero-label"
+            id="pageNewsletterType">
+
+            النشرة المصرية
+
         </span>
 
-        <h1>
-            النشرات القانونية
+
+        <h1 id="pageNewsletterTitle">
+
+            النشرة القانونية
+
         </h1>
 
-        <p>
-            تابع أحدث المستجدات التشريعية والأخبار القانونية
-            في مصر والوطن العربي من خلال نشرات دورية منظمة وسهلة القراءة.
+
+        <p id="pageNewsletterNumber">
+
+            --
+
         </p>
-
-
-        <!-- Newsletter Types -->
-
-        <div class="newsletter-tabs">
-
-            <button
-                class="newsletter-tab active"
-                data-newsletter="egypt">
-
-                <span>01</span>
-                النشرة المصرية
-
-            </button>
-
-
-            <button
-                class="newsletter-tab"
-                data-newsletter="arab">
-
-                <span>02</span>
-                النشرة العربية
-
-            </button>
-
-
-            <button class="newsletter-tab disabled">
-
-                <span>03</span>
-                النشرة العالمية
-
-                <small>قريبًا</small>
-
-            </button>
-
-
-            <button class="newsletter-tab disabled">
-
-                <span>04</span>
-                المؤلفات
-
-                <small>قريبًا</small>
-
-            </button>
-
-        </div>
 
     </div>
 
 </section>
 
 
-<!-- ================= NEWSLETTER ================= -->
 
-<main
-    class="newsletter-container"
-    id="newsletters">
+<!-- =====================================================
+     NEWSLETTER CONTENT
+===================================================== -->
+
+<main class="newsletter-container">
 
 
-    <!-- Issue Header -->
+    <!-- INTRO -->
 
-    <div class="issue-header">
+    <section class="newsletter-intro">
 
-        <div>
+        <h3>
+            المقدمة
+        </h3>
 
-            <span
-                class="issue-type"
-                id="issueType">
-                النشرة المصرية
-            </span>
 
-            <h2 id="issueTitle">
-                الأسبوع الأول من أغسطس 2026
-            </h2>
-
-        </div>
+        <p id="newsletterIntro">
+            جاري تحميل النشرة...
+        </p>
 
 
         <div
-            class="issue-number"
-            id="issueNumber">
-
-            01 أغسطس 2026
-
+            class="highlights"
+            id="newsletterHighlights">
         </div>
 
+    </section>
+
+
+
+    <!-- ALL SECTIONS -->
+
+    <div id="newsletterSections">
     </div>
-
-
-    <!-- ================= ISSUES ================= -->
-
-    <div class="issues-wrapper">
-
-        <div class="issues-title">
-            أعداد النشرة
-        </div>
-
-        <div
-            class="issues-list"
-            id="issuesList">
-        </div>
-
-    </div>
-
-
-    <!-- ================= DYNAMIC CONTENT ================= -->
-
-    <div id="newsletterContent"></div>
 
 
 </main>
 
 
-<!-- ================= ABOUT ================= -->
 
-<section
-    class="about"
-    id="about">
-
-    <div class="about-container">
-
-        <div>
-
-            <span class="section-label">
-                عن النشرة
-            </span>
-
-            <h2>
-                المعلومة القانونية<br>
-                في مكان واحد
-            </h2>
-
-        </div>
-
-
-        <p>
-            تجمع نشرة البوابة القانونية للتشريعات المصرية
-            أهم المستجدات التشريعية والقانونية في صياغة منظمة
-            تساعد على الوصول إلى المعلومات ومتابعتها بسهولة.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
@@ -233,7 +181,9 @@
 </footer>
 
 
+
 <script src="script.js"></script>
 
 </body>
+
 </html>

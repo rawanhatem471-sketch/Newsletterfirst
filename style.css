@@ -1580,3 +1580,15 @@ footer {
     }
 
 }
+body {
+    background: red !important;
+}
+
+footer {
+    background: black !important;
+}
+
+.hero,
+.newsletter-page-hero {
+    background: blue !important;
+}

@@ -324,3 +324,67 @@ footer {
 .footer-container p {
     color: #cbd7e0 !important;
 }
+/* =========================================================
+   FOOTER FINAL ADJUSTMENTS
+========================================================= */
+
+footer {
+    background: #0c2d4a !important;
+    color: #cbd7e0 !important;
+}
+
+
+/* ELP LOGO */
+
+.footer-logo {
+    font-family: Arial, sans-serif !important;
+
+    font-size: 26px !important;
+
+    font-weight: 900 !important;
+
+    letter-spacing: -1.8px !important;
+
+    color: #ffffff !important;
+
+    line-height: 1 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+}
+
+
+.footer-logo span {
+    color: #c9a24b !important;
+}
+
+
+/* FOOTER DESCRIPTION */
+
+.footer-container p {
+    font-size: 11px !important;
+
+    color: #cbd7e0 !important;
+
+    line-height: 1.8 !important;
+
+    margin-top: 10px !important;
+
+    position: relative;
+
+    top: 7px;
+}
+
+
+/* FOOTER ALIGNMENT */
+
+.footer-container {
+    min-height: 90px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+}

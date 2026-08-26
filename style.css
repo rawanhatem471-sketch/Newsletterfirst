@@ -1579,16 +1579,3 @@ footer {
         line-height: 1.7;
     }
 
-}
-body {
-    background: red !important;
-}
-
-footer {
-    background: black !important;
-}
-
-.hero,
-.newsletter-page-hero {
-    background: blue !important;
-}

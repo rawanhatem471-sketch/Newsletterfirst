@@ -1,6 +1,12 @@
 /* =========================================================
    ELPAI NEWSLETTER
+   Archive + Newsletter Details
    Modern Editorial Government Style
+========================================================= */
+
+
+/* =========================================================
+   RESET
 ========================================================= */
 
 * {
@@ -162,7 +168,8 @@ body {
    HERO
 ========================================================= */
 
-.hero {
+.hero,
+.newsletter-page-hero {
 
     position: relative;
 
@@ -205,8 +212,11 @@ body {
     position: relative;
 
     padding:
+
         70px
+
         0
+
         36px;
 }
 
@@ -338,23 +348,24 @@ body {
 
 
 /* =========================================================
-   NEWSLETTER MAIN
+   ARCHIVE
 ========================================================= */
 
 .newsletter-container {
 
     padding:
+
         55px
+
         0
+
         85px;
 }
 
 
-/* =========================================================
-   ISSUE HEADER
-========================================================= */
+/* ARCHIVE HEADER */
 
-.issue-header {
+.archive-header {
 
     display: flex;
 
@@ -366,7 +377,7 @@ body {
 
     padding-bottom: 25px;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     border-bottom: 1px solid #dbe5ec;
 }
@@ -382,7 +393,7 @@ body {
 }
 
 
-.issue-header h2 {
+.archive-header h2 {
 
     color: #153e60;
 
@@ -394,7 +405,7 @@ body {
 }
 
 
-.issue-number {
+.archive-count {
 
     background: #e8f4f5;
 
@@ -413,106 +424,323 @@ body {
 
 
 /* =========================================================
-   ISSUE LIST
+   NEWSLETTER ARCHIVE GRID
 ========================================================= */
 
-.issues-wrapper {
+.newsletter-archive {
 
-    margin-bottom: 38px;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
 }
 
 
-.issues-title {
+/* =========================================================
+   ARCHIVE CARD
+========================================================= */
 
-    color: #153e60;
+.archive-card {
 
-    font-size: 16px;
+    position: relative;
 
-    font-weight: 800;
+    background: white;
 
-    margin-bottom: 13px;
-}
+    border: 1px solid #dfe8ef;
 
+    border-radius: 16px;
 
-.issues-list {
+    padding: 25px;
+
+    min-height: 205px;
 
     display: flex;
 
-    flex-wrap: wrap;
+    flex-direction: column;
 
-    gap: 10px;
-}
-
-
-.issue-button {
-
-    border: 1px solid #d9e5ec;
-
-    background: #ffffff;
-
-    color: #47647a;
-
-    padding: 11px 16px;
-
-    border-radius: 9px;
-
-    font-family: inherit;
-
-    font-size: 12px;
-
-    font-weight: 600;
+    justify-content: space-between;
 
     cursor: pointer;
 
-    transition: .25s;
+    text-decoration: none;
 
-    text-align: right;
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px
+        rgba(20,55,90,.035);
+
+    transition: .25s;
 }
 
 
-.issue-button:hover {
+.archive-card::before {
 
-    border-color: #9ccfd2;
+    content: "";
 
-    background: #f3f9fa;
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 4px;
+
+    background: #0a778a;
+
+    opacity: .8;
+}
+
+
+.archive-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #c8dce7;
+
+    box-shadow:
+        0 15px 35px
+        rgba(20,55,90,.09);
+}
+
+
+.archive-card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.archive-card-type {
+
+    color: #087d85;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.archive-card-number {
+
+    background: #edf6f7;
 
     color: #08777f;
 
-    transform: translateY(-1px);
+    border-radius: 6px;
+
+    padding: 3px 8px;
+
+    font-size: 10px;
+
+    font-weight: 700;
 }
 
 
-.issue-button.active {
+.archive-card h3 {
 
-    background: #e8f4f5;
+    color: #173f60;
 
-    color: #08757d;
+    font-size: 19px;
 
-    border-color: #b9dfe1;
+    line-height: 1.7;
 
-    box-shadow:
-        0 4px 12px
-        rgba(8,117,125,.08);
+    margin-bottom: 8px;
 }
 
 
-.issue-small-number {
+.archive-card-date {
+
+    color: #8194a5;
+
+    font-size: 11px;
+}
+
+
+.archive-card-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.archive-card-link {
+
+    color: #087d85;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.archive-card-arrow {
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: #edf6f7;
+
+    color: #08777f;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    transition: .25s;
+}
+
+
+.archive-card:hover .archive-card-arrow {
+
+    transform: translateX(-3px);
+
+    background: #dceff1;
+}
+
+
+/* =========================================================
+   NO ARCHIVE RESULTS
+========================================================= */
+
+.archive-empty {
+
+    grid-column: 1 / -1;
+
+    background: white;
+
+    border: 1px dashed #cbd9e5;
+
+    border-radius: 15px;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    color: #8195a6;
+}
+
+
+.archive-empty strong {
 
     display: block;
 
-    font-size: 9px;
+    color: #526e84;
 
-    color: #8ba0af;
+    font-size: 15px;
 
-    margin-top: 2px;
-
-    font-weight: 500;
+    margin-bottom: 4px;
 }
 
 
-.issue-button.active .issue-small-number {
+.archive-empty span {
 
-    color: #4c9297;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   NEWSLETTER DETAILS HERO
+========================================================= */
+
+.newsletter-page-hero {
+
+    min-height: 310px;
+}
+
+
+.newsletter-page-hero .hero-container {
+
+    padding:
+        35px
+        0
+        55px;
+}
+
+
+.newsletter-page-hero h1 {
+
+    font-size: 39px;
+
+    line-height: 1.4;
+
+    margin-top: 10px;
+
+    margin-bottom: 8px;
+
+    font-weight: 800;
+}
+
+
+.newsletter-page-hero p {
+
+    color: #dcecf3;
+
+    font-size: 14px;
+}
+
+
+/* BACK BUTTON */
+
+.back-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #e0f2f4;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    background: rgba(255,255,255,.08);
+
+    padding: 7px 13px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 35px;
+
+    transition: .2s;
+}
+
+
+.back-button:hover {
+
+    background: rgba(255,255,255,.18);
+
 }
 
 
@@ -531,7 +759,9 @@ body {
     padding: 29px 30px;
 
     box-shadow:
+
         0 8px 30px
+
         rgba(20,55,90,.05);
 
     margin-bottom: 50px;
@@ -580,7 +810,9 @@ body {
     background: #f2f7fa;
 
     border-right:
+
         3px solid
+
         #0b788b;
 
     border-radius: 9px;
@@ -664,7 +896,9 @@ body {
     overflow: hidden;
 
     box-shadow:
+
         0 8px 28px
+
         rgba(20,55,90,.05);
 
     transition: .25s;
@@ -694,7 +928,9 @@ body {
     transform: translateY(-2px);
 
     box-shadow:
+
         0 14px 35px
+
         rgba(20,55,90,.08);
 }
 
@@ -729,7 +965,9 @@ body {
     transition: .25s;
 
     box-shadow:
+
         0 5px 20px
+
         rgba(20,55,90,.035);
 }
 
@@ -739,7 +977,9 @@ body {
     transform: translateY(-3px);
 
     box-shadow:
+
         0 12px 30px
+
         rgba(20,55,90,.08);
 }
 
@@ -824,7 +1064,9 @@ body {
 }
 
 
-/* SHARE */
+/* =========================================================
+   SHARE
+========================================================= */
 
 .news-actions {
 
@@ -875,8 +1117,11 @@ body {
     gap: 10px;
 
     margin:
+
         25px
+
         0
+
         15px;
 }
 
@@ -990,14 +1235,19 @@ body {
 .about-container {
 
     padding:
+
         50px
+
         0
+
         65px;
 
     display: grid;
 
     grid-template-columns:
+
         1fr
+
         1fr;
 
     gap: 50px;
@@ -1086,6 +1336,17 @@ footer {
    RESPONSIVE
 ========================================================= */
 
+@media(max-width: 1000px) {
+
+    .newsletter-archive {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
 @media(max-width: 900px) {
 
     .highlights {
@@ -1164,7 +1425,7 @@ footer {
     }
 
 
-    .issue-header {
+    .archive-header {
 
         flex-direction: column;
 
@@ -1172,36 +1433,33 @@ footer {
     }
 
 
-    .issue-header h2 {
+    .archive-header h2 {
 
         font-size: 23px;
     }
 
 
-    .issues-list {
+    .newsletter-archive {
 
-        display: grid;
-
-        grid-template-columns:
-            1fr 1fr;
-
-        gap: 8px;
+        grid-template-columns: 1fr;
     }
 
 
-    .issue-button {
+    .archive-card {
 
-        width: 100%;
-
-        font-size: 10px;
-
-        padding: 9px 10px;
+        min-height: 185px;
     }
 
 
-    .issues-title {
+    .newsletter-page-hero {
 
-        font-size: 14px;
+        min-height: 270px;
+    }
+
+
+    .newsletter-page-hero h1 {
+
+        font-size: 29px;
     }
 
 
